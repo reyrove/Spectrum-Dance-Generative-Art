@@ -1,192 +1,169 @@
 # Spectrum Dance — Generative Art
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://reyrove.github.io/Spectrum-Dance-Generative-Art)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
-> **Generative curve art with dynamic color shifting.** Each refresh creates a unique dancing curve with 2-8 control points, smoothly shifting colors as it moves across a gradient background.
-
-## 🎨 Live Demo
-
-<div align="center">
-  <a href="https://reyrove.github.io/Spectrum-Dance-Generative-Art" target="_blank">
-    <img src="demo-screenshot.jpg" alt="Spectrum Dance Website Demo" width="800" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);"/>
-  </a>
-  <br><br>
-  <a href="https://reyrove.github.io/Spectrum-Dance-Generative-Art" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_View_Live_Demo-0a0a0a?style=for-the-badge&logo=githubpages&logoColor=white&color=ff6b9d" alt="View Live Demo" width="300"/>
-  </a>
-  <br>
-  <em>Click the image or button to experience the generative art</em>
-</div>
-
-## 👕 Apparel Preview
-
-<div align="center">
-  <img src="Spectrum-Dance.jpg" alt="Spectrum Dance on T-Shirt" width="600" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"/>
-  <br>
-  <em>Spectrum Dance artwork printed on a T-shirt</em>
-</div>
-
-## ✨ Features
-
-- **Dynamic Curves** — Smooth Catmull-Rom curves with 2-8 control points
-- **Color Shifting** — Colors dance and shift through the spectrum
-- **Gradient Background** — Two random colors blended diagonally
-- **Infinite Variation** — Each refresh creates unique parameters
-- **Animated** — Curves flow and morph continuously
-- **Save & Share** — Download as PNG
-- **Apparel Mode** — Preview artwork on a T-shirt mockup
-- **Responsive** — Works on desktop, tablet, and mobile
-- **p5.js Powered** — Built with the creative coding library
-- **Keyboard Shortcuts**:
-  - `R` — Regenerate
-  - `S` — Save image
-  - `T` — Toggle apparel view
-  - `Space` — Regenerate
-
-## 🎨 Artwork Details
-
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Control Points** | 2–8 | Number of curve control points |
-| **RGB Range** | 1–10 | Color shift speed |
-| **Background Colors** | 2 random | Gradient blend |
-| **Angle Speed** | 1/20000 | Curve animation speed |
-| **Stroke Weight** | Variable | Based on canvas size |
-
-## 🎯 Color Features
-
-### Background Gradients
-- Two random colors from 200+ options
-- Diagonal gradient blending
-- Creates unique atmospheres
-
-### Curve Colors
-- Start with random RGB values
-- Shift smoothly within ±RGB range
-- Constrained to 0–255
-- Constant color evolution
-
-## 🚀 Quick Start
-
-### Local Development
-
-```bash
-# Clone the repository
-git clone https://github.com/reyrove/Spectrum-Dance-Generative-Art.git
-
-# Navigate to the directory
-cd Spectrum-Dance-Generative-Art
-
-# Open in browser
-open index.html
-# or use a live server
-```
-
-### Deploy to GitHub Pages
-
-1. Push to GitHub
-2. Go to Settings → Pages
-3. Select branch `main` and root folder
-4. Your site will be live at `https://reyrove.github.io/Spectrum-Dance-Generative-Art`
-
-## 🧠 How It Works
-
-The artwork generates dynamic curves using linked pendulum-like motion:
-
-1. **Setup**:
-   - Random background gradient (2 colors from 200+)
-   - Random control points (2–8)
-   - Random RGB shift range (1–10)
-   - Random starting colors
-
-2. **Motion**:
-   - Each control point moves like a pendulum
-   - Linked points create fluid, organic motion
-   - Unique speeds and phases for each point
-   - Continuous animation
-
-3. **Rendering**:
-   - Smooth Catmull-Rom curves (p5.js curveVertex)
-   - Dynamic stroke color shifting
-   - No fill, pure line art
-   - Background gradient provides depth
-
-## 📁 File Structure
-
-```
-Spectrum-Dance-Generative-Art/
-├── index.html          # Main application (all-in-one)
-├── Spectrum-Dance.jpg  # T-shirt mockup image
-├── fav.svg             # Favicon
-├── demo-screenshot.jpg # Website demo screenshot
-├── README.md           # This file
-└── LICENSE             # MIT License
-```
-
-## 🛠️ Tech Stack
-
-- **p5.js** — Creative coding library
-- **Canvas API** — 2D rendering
-- **CSS Flexbox/Grid** — Responsive layout
-- **GitHub Pages** — Hosting
-
-## 🎯 Interactive Controls
-
-| Action | Keyboard | Button |
-|--------|----------|--------|
-| Regenerate | `R` or `Space` | Click "regenerate" |
-| Save Image | `S` | Click "regenerate" |
-| Toggle Apparel | `T` | Click "apparel" |
-
-## 🎨 The Creative Process
-
-### Dynamic Curves
-Each curve is generated using linked pendulum motion. Control points swing with different speeds and phases, creating fluid, organic movements that never repeat.
-
-### Color Evolution
-Colors shift continuously through the spectrum. Starting from random RGB values, each frame adds a small random delta, creating a smooth, unpredictable color dance.
-
-### Gradient Backgrounds
-Two random colors blend diagonally across the canvas. The gradient provides depth and contrast, making the shifting curve colors pop.
-
-### Catmull-Rom Smoothness
-Using p5.js curveVertex, the curves are rendered as smooth Catmull-Rom splines, creating elegant, flowing lines that feel alive.
-
-## 📱 Responsive Design
-
-The application automatically adapts to:
-- Desktop screens
-- Tablets
-- Mobile phones
-- Landscape orientation
-- Various aspect ratios
-- Small screens (down to 380px wide)
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Fork the repository
-- Create a feature branch
-- Submit a pull request
-
-### Ideas for Contributions:
-- Additional motion patterns
-- New color palettes
-- Interactive controls
-- Performance optimizations
-- More apparel mockups
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Created with p5.js
-- Inspired by pendulum motion and color theory
-- Special thanks to the creative coding community
+> A seed-based generative system for dynamic curve compositions.  
+> A reproducible catalogue of computational curve studies.
 
 ---
 
-**Built with ❤️ and dancing dreams**
+## What is this?
+
+**Spectrum Dance** is a generative design system built on a chain of oscillating links. Each link is a control point that moves along its own sine wave — its own speed, its own amplitude, its own phase. The chain traces a single smooth curve, and the curve's colour drifts through the spectrum as the frame advances.
+
+Every artwork in this catalogue is defined by a single numeric seed. The same seed always produces the identical composition — making each piece **traceable, reproducible, and licensable** across textile, print, and apparel applications.
+
+Named for the continuous drift of colour and motion that characterises each composition, **Spectrum Dance** reframes animated curve generation as a textile.
+
+---
+
+## Live
+
+🌐 **[View the catalogue →](https://reyrove.github.io/Spectrum-Dance/)**
+
+---
+
+## The System
+
+The generator combines two layers:
+
+| Layer | Description |
+|-------|-------------|
+| **Link chain** | 2 to 8 control points, each oscillating on its own sine wave. |
+| **Colour drift** | The stroke colour drifts through the RGB spectrum on every frame, bounded by a seeded range. |
+
+Both layers are driven by the same seed, ensuring deterministic output. The rendering is **live** — the cover, plate, and framed print all run continuous animation loops.
+
+### Parameters
+
+- **Control points** — 2 to 8
+- **Link length** — `canvas size / (NumberOflinks × 2)`
+- **Speed coefficients** — 10 to 50 (per link, per axis), signed at random
+- **Initial phase** — 0 to 2π (per link), seeded
+- **Angle velocity** — 1 / 20000 per frame
+- **RGB range** — 1 to 10 per frame
+- **Background gradient** — one of 180 curated tones on each end, drawn diagonally
+
+---
+
+## Structure
+
+```
+Spectrum-Dance/
+├── index.html              ← Full catalogue (single-file)
+├── images/
+│   ├── fav.svg
+│   ├── spectrum-tote.png
+│   ├── spectrum-cushion.png
+│   └── ...
+├── Spectrum-Dance.jpg      ← Apparel mockup
+└── README.md
+```
+
+The entire project is contained in a single `index.html` — no build step, no framework. The only external dependency is **p5.js** (loaded from CDN), which drives the exact curve-rendering pipeline.
+
+---
+
+## Features
+
+- **Seed-based generation** — every composition is deterministic and reproducible
+- **Live animation** — cover, plate, and framed print drift continuously
+- **Live catalogue** — cover, statement, plate, surfaces, process, archive, commission sections
+- **Multiple surfaces** — print, scarf, textile, wallpaper — all rendered from the same seed
+- **Archive of 8 seeds** — click any plate to load it into the main view
+- **PNG export** — download the current frame of the plate directly from the browser
+- **Keyboard shortcuts** — `R` for new seed, `S` to save
+- **Legal modal** — licensing, terms, and credits built in
+- **Responsive** — works on desktop, tablet, and mobile
+- **Mobile-first navbar** — horizontally scrollable with fade hint
+
+---
+
+## Usage
+
+### Generate a new composition
+
+Click **New Seed** or press `R`.
+
+### Download the current frame
+
+Click **Download** or press `S`.
+
+### Load a seed from the archive
+
+Click any plate in the **Archive** section.
+
+---
+
+## Color System
+
+Every composition is seeded with two values:
+
+- **Background gradient** — a two-tone diagonal gradient drawn from the same palette of 180 curated colours that the Arachne catalogue uses. Each seed picks two of them, one for the top-left, one for the bottom-right.
+- **Stroke colour** — a seed initialises the starting RGB triplet. On every frame, each channel drifts by a random amount within `[-rgbRange, +rgbRange]`, then is clamped to `[0, 255]`. That gives the curve its "spectrum drift" — the colour continuously walks the RGB cube within a bounded neighbourhood.
+
+Because the seed picks both the palette and the drift, no two seeds produce the same rhythm of colour.
+
+---
+
+## Technical Notes
+
+- **p5.js** drives the curve rendering. The `beginShape()` / `curveVertex()` / `endShape()` pipeline is preserved exactly from the original design — the same Catmull-Rom spline, drawn with the exact same tangent math.
+- **Seeded randomness** for structural parameters (link count, speeds, phases, initial colour) uses a Lehmer LCG. **Per-frame colour drift** uses `Math.random()`, matching the original file — because the drift is a live animation, not a seeded still.
+- **Three independent p5 instances** run the cover, plate, and framed print. Each has its own canvas, its own seed, and its own animation loop.
+- **Static stills for surfaces and archive.** Each of the four surfaces and eight archive thumbnails instantiates its own p5 sketch, runs it for a fixed number of frames (7000 for surfaces, 4000–12000 for archive), then calls `p.noLoop()` to freeze the composition.
+- **No approximations.** Every canvas — live or frozen — uses the same p5 sketch factory. Nothing on the page renders a hand-rolled curve; every line you see comes from p5's `curveVertex`.
+- **RAF pausing** — `visibilitychange` pauses all live p5 instances when the tab is hidden. Surfaces and archive are frozen already and don't need pausing.
+- **Resize handling** debounces and fully rebuilds all p5 instances, so the composition always sizes correctly.
+- `prefers-reduced-motion` respected.
+
+---
+
+## About
+
+**Spectrum Dance** is a project by [Reyhaneh Daneshdoost](https://reyrove.github.io/) — an Iranian-born artist working at the intersection of classical textile logic and generative systems.
+
+The work begins with a simple observation: the woven surface — repetitive, mathematically structured, infinitely variable — has always been a form of computation, long before computers.
+
+**Spectrum Dance** is an attempt to render that logic visible.
+
+> *A line that never stops moving cannot repeat — it can only return, shifted.*
+
+---
+
+## Licensing
+
+All compositions are seed-documented and available for licensing across textile, surface, and apparel applications.
+
+For commercial use, custom editions, or exclusive rights:
+
+📧 **reyhanehdaneshdoost@gmail.com**
+
+See the **Licensing** section in the live catalogue for details.
+
+---
+
+## Links
+
+- 🌐 [Website](https://reyrove.github.io/)
+- 📷 [Instagram](https://www.instagram.com/rey._.rove/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/reyhaneh-daneshdoost-730481160/)
+- 🐦 [X](https://x.com/reyrove)
+
+---
+
+## Credits
+
+**Design & Generative System**  
+Reyhaneh Daneshdoost
+
+**Typefaces**  
+Cormorant Garamond · DM Mono
+
+**Edition**  
+Spectrum Dance — Autumn 2026
+
+---
+
+<p align="center">
+  <em>Generative Dynamic Curve</em><br />
+  <sub>© Reyrove Studio · All compositions reproducible by seed</sub>
+</p>
